@@ -12,6 +12,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroVideo from "@/assets/chativ-hero-background.mp4.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -44,6 +45,16 @@ const partners = [
 function Index() {
   return (
     <main className="hero-shell">
+      <video
+        className="hero-video"
+        src={heroVideo.url}
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="metadata"
+        aria-hidden="true"
+      />
       <header className="hero-header" aria-label="Main navigation">
         <a className="brand" href="#top" aria-label="Chativ home">
           <span className="brand-mark" aria-hidden="true">

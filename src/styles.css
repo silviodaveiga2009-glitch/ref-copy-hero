@@ -149,6 +149,7 @@
 }
 
 @utility hero-shell {
+  height: 100svh;
   min-height: 100svh;
   overflow: hidden;
   background: var(--color-background);
@@ -221,7 +222,7 @@
 }
 
 @utility header-cta { height: 2.35rem; padding-inline: 1.3rem; }
-@utility mobile-menu { display: none; color: var(--color-foreground); }
+@utility mobile-menu { display: none !important; color: var(--color-foreground); }
 
 @utility hero-content {
   position: relative;
@@ -353,10 +354,10 @@
 @utility scroll-icon { display: grid; width: 2rem; height: 2rem; place-items: center; border-radius: 999px; background: var(--color-foreground); color: var(--color-background); & svg { width: 1rem; } }
 
 @media (max-width: 900px) {
-  .hero-shell { overflow: auto; }
+  .hero-shell { height: auto; overflow: auto; }
   .hero-header { grid-template-columns: 1fr auto; }
   .desktop-nav, .header-actions time, .header-cta { display: none; }
-  .mobile-menu { display: inline-flex; }
+  .mobile-menu { display: inline-flex !important; }
   .hero-content { min-height: auto; padding-top: 4.5rem; padding-bottom: 2rem; }
   .hero-intro h1 { font-size: clamp(3rem, 12vw, 5rem); }
   .partners { position: static; width: 100%; margin-top: 4rem; }

@@ -86,7 +86,7 @@ function Index() {
 
           <p className="hero-copy">
             We create clean, intuitive, and accessible digital<br className="desktop-break" />
-            experiences shaped by real human behavior.
+            {" "}experiences shaped by real human behavior.
           </p>
 
           <div className="conversion-row" id="contact">

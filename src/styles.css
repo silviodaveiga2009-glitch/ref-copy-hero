@@ -383,3 +383,7 @@
   .partners { animation: hero-rise 700ms 120ms ease both; }
   @keyframes hero-rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 }
+
+@media (max-width: 900px) {
+  button.mobile-menu { display: inline-flex !important; }
+}

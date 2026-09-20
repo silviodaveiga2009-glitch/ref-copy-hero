@@ -65,7 +65,7 @@ function Index() {
           <Button asChild variant="light" className="header-cta">
             <a href="#contact">Get Started</a>
           </Button>
-          <Button variant="ghost" size="icon" className="mobile-menu" aria-label="Open menu">
+          <Button variant="ghost" size="icon" className="hidden max-[900px]:inline-flex" aria-label="Open menu">
             <Menu />
           </Button>
         </div>

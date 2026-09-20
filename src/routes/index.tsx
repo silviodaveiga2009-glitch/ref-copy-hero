@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowDown,
   ArrowRight,
@@ -74,7 +74,7 @@ function Index() {
         <div className="header-actions">
           <time dateTime="14:16">02:16 PM (USA)</time>
           <Button asChild variant="light" className="header-cta">
-            <a href="#contact">Get Started</a>
+            <Link to="/get-started">Get Started</Link>
           </Button>
           <Button variant="ghost" size="icon" className="hidden max-[900px]:inline-flex" aria-label="Open menu">
             <Menu />
@@ -102,10 +102,10 @@ function Index() {
 
           <div className="conversion-row" id="contact">
             <Button asChild variant="hero" className="hero-cta">
-              <a href="mailto:hello@chativ.com">
+              <Link to="/get-started">
                 <span>Get started</span>
                 <span className="cta-icon"><ArrowRight aria-hidden="true" /></span>
-              </a>
+              </Link>
             </Button>
             <div className="social-proof" aria-label="Over 100 happy clients worldwide">
               <div className="avatar-stack" aria-hidden="true">

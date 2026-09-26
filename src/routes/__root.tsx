@@ -77,14 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Chativ — Technology Crafted for All" },
-      { name: "description", content: "Clean, intuitive and accessible digital experiences shaped by real human behavior." },
-      { name: "author", content: "Chativ" },
-      { property: "og:title", content: "Chativ — Technology Crafted for All" },
-      { property: "og:description", content: "Clean, intuitive and accessible digital experiences shaped by real human behavior." },
+      { title: "PlayStation 5 — Uma nova forma de jogar" },
+      { name: "description", content: "Conheça a família PlayStation 5. Consulte disponibilidade e solicite informações." },
+      { name: "author", content: "PlayStation 5" },
+      { property: "og:title", content: "PlayStation 5 — Uma nova forma de jogar" },
+      { property: "og:description", content: "Conheça a família PlayStation 5. Consulte disponibilidade e solicite informações." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
@@ -106,7 +105,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt">
       <head>
         <HeadContent />
       </head>
